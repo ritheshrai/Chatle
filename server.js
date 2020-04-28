@@ -57,7 +57,7 @@ io.on('connection', socket => {
             })
     })
 })
-const PORT = 3000 || process.env.PORT  // port to run the app
+const PORT = process.env.PORT || 3000  // port to run the app
 
 // Running the server
 server.listen(PORT, () => console.log(`Server is live on ${PORT}`))
